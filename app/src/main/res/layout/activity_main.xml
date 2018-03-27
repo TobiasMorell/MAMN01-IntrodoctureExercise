@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+    </data>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/intro_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chose the sensor to test:"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Material.Headline" />
+
+        <Button
+            android:id="@+id/open_compas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Compass"
+            android:onClick="openCompass"/>
+
+        <Button
+            android:id="@+id/open_accelerometer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accelerometer"
+            android:onClick="openAccelerometer"/>
+    </LinearLayout>
+</layout>

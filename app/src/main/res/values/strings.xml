@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MAMN01 Sensor</string>
+    <string name="compass_needle">Compass Needle</string>
+    <string name="heading">Heading</string>
+</resources>

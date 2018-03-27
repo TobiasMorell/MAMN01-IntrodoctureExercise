@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="x"
+            type="float"/>
+        <variable
+            name="y"
+            type="float"/>
+        <variable
+            name="z"
+            type="float"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/accel_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accelerometer Values:"
+            android:textAppearance="@android:style/TextAppearance.Material.Title" />
+
+        <TextView
+            android:id="@+id/accel_x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{`x: ` + x}"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+        <TextView
+            android:id="@+id/accel_y"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{`y: ` + y}"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+        <TextView
+            android:id="@+id/accel_z"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{`z: ` + z}"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+    </LinearLayout>
+</layout>
